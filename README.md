@@ -190,7 +190,7 @@ If hosting via GitHub: commit and push your changes. Auto-deployment handles the
 
 ## Adding a Custom Domain
 
-On any of the above platforms, you can add your own domain (e.g. `chrisupstone.com`) through their domain settings. They will give you DNS instructions for your domain registrar. Typical setup takes under 30 minutes.
+On any of the above platforms, you can add your own domain (e.g. `chrisupstone.me`) through their domain settings. They will give you DNS instructions for your domain registrar. Typical setup takes under 30 minutes.
 
 ---
 
