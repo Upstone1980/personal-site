@@ -1,187 +1,674 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chris Upstone — Founder · Operator · Investor</title>
-  <meta name="description" content="Chris Upstone — building and leading mission-critical technology companies across Australia. BAI Communications, Vitalis Solutions, Titan ICT.">
+
+  <!-- =====================================================
+    HOMEPAGE CONTENT — edit title, description, hero copy
+    in this file. For proof points, edit below.
+    ===================================================== -->
+  <title>Chris Upstone — Operator-Investor, Telecommunications &amp; Infrastructure</title>
+  <meta name="description" content="Senior ICT and infrastructure executive with 24 years' leadership in telecommunications, mining, oil and gas, and digital infrastructure. Operator-investor focused on networks, AI-enabled platforms and energy-linked assets.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chris Upstone — Operator-Investor">
+  <meta property="og:description" content="Senior ICT and infrastructure executive. Operator and investor across telecommunications, resources, and digital infrastructure.">
+  <meta property="og:image" content="./assets/images/hero-infrastructure.png">
+  <meta property="og:url" content="https://chrisupstone.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured data (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chris Upstone",
+    "jobTitle": "Director, Private and Public Networks",
+    "worksFor": { "@type": "Organization", "name": "BAI Communications" },
+    "description": "Senior ICT and infrastructure executive and operator-investor in telecommunications, resources, and digital infrastructure.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Perth", "addressRegion": "WA", "addressCountry": "AU" },
+    "url": "https://chrisupstone.com",
+    "sameAs": ["https://www.linkedin.com/in/chrisupstone"]
+  }
+  </script>
+
+  <!-- Fonts: Cormorant (display serif) + Switzer (body sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="page-wrapper">
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="/" class="logo">CU<span>.</span></a>
-      <nav class="nav">
-        <a href="/" class="active">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Header (injected by components.js) -->
+    <div id="site-header"></div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Chris Upstone</h1>
-      <p class="sub">
-        <span class="fade">Founder.</span> <span class="fade">Operator.</span> <span class="fade">Investor.</span>
-      </p>
-      <p class="meta">
-        Director, Public &amp; Private Networks — BAI Communications &nbsp;·&nbsp;
-        Non-Executive Director — Vitalis Solutions
-      </p>
-      <div class="industrial-line" style="width:80px; margin-top: var(--space-md);"></div>
-    </div>
-  </section>
+    <main class="page-content" id="main-content">
 
-  <!-- Intro -->
-  <section class="section">
-    <div class="container">
-      <p class="tagline" style="font-size:1.25rem;">
-        Two decades building, leading, and investing in mission-critical communications
-        and ICT companies that keep Australia's industries connected.
-      </p>
+      <!-- =========================================
+           HERO SECTION
+           Edit: headline, sub-copy below
+           ========================================= -->
+      <section class="hero" aria-labelledby="hero-headline">
+        <div class="hero__bg">
+          <img
+            class="hero__bg-image"
+            src="./assets/images/hero-infrastructure.png"
+            alt="Aerial view of telecommunications and mining infrastructure in Western Australia at dusk"
+            loading="eager"
+            fetchpriority="high"
+          >
+          <div class="hero__bg-overlay"></div>
+        </div>
 
-      <!-- Three Pillars -->
-      <div class="pillars">
+        <div class="hero__content container">
+          <!-- EDIT HERO EYEBROW LABEL BELOW -->
+          <p class="hero__eyebrow">Perth, Western Australia</p>
 
-        <div class="pillar-card">
-          <div class="icon">F</div>
-          <h3>Founder</h3>
-          <p>
-            Co-founded Vitalis Solutions, a Brisbane-based master systems integrator
-            delivering ICT for Australia's healthcare and education sectors. Serves as
-            Non-Executive Director and major shareholder.
+          <!-- EDIT MAIN HEADLINE BELOW -->
+          <h1 class="hero__headline" id="hero-headline">
+            Director, operator and investor across resources, ICT and infrastructure.
+          </h1>
+
+          <!-- EDIT SUB-COPY BELOW -->
+          <p class="hero__sub">
+            I am a senior ICT and infrastructure executive with two decades leading growth, transformation and service delivery for mining, oil &amp; gas and telecommunications clients in Australia and globally. As both an operator and an investor, I focus on networks, digital infrastructure, AI-enabled platforms and energy-linked assets, combining hands-on execution experience with a disciplined, long-term capital allocation lens.
           </p>
-          <div class="pillar-tags">
-            <span>Strategy</span>
-            <span>Governance</span>
-            <span>Healthcare</span>
-            <span>Education</span>
+
+          <!-- EDIT CTA LINKS BELOW -->
+          <div class="role-strip">
+            <a href="about.html" class="cta-link">
+              About
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="board.html" class="cta-link">
+              Board &amp; Governance
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="contact.html" class="cta-link">
+              Get in touch
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
           </div>
         </div>
+      </section>
 
-        <div class="pillar-card">
-          <div class="icon">O</div>
-          <h3>Operator</h3>
-          <p>
-            Director of Public &amp; Private Networks at BAI Communications. Former Managing
-            Director of Titan ICT, leading the company through its acquisition by BAI.
-            20+ years delivering private 5G, LTE, and mission-critical networks across
-            mining, energy, rail, and government.
-          </p>
-          <div class="pillar-tags">
-            <span>Private 5G</span>
-            <span>LTE</span>
-            <span>Critical Comms</span>
-            <span>Mining</span>
-            <span>Rail</span>
+      <!-- =========================================
+           PROOF POINTS BAR
+           Edit: numbers and labels below
+           ========================================= -->
+      <section class="proof-bar" aria-label="Career highlights">
+        <div class="container">
+          <div class="proof-bar__inner">
+            <!-- EDIT PROOF POINTS BELOW -->
+            <div class="proof-item reveal">
+              <div class="proof-item__number">24</div>
+              <div class="proof-item__label">Years' ICT &amp; infrastructure leadership in Australia and globally</div>
+            </div>
+            <div class="proof-item reveal reveal--delay-1">
+              <div class="proof-item__number">MD</div>
+              <div class="proof-item__label">Former Managing Director, Titan ICT — national technology services</div>
+            </div>
+            <div class="proof-item reveal reveal--delay-2">
+              <div class="proof-item__number">NED</div>
+              <div class="proof-item__label">Non-executive director experience &amp; AICD-educated director</div>
+            </div>
+            <div class="proof-item reveal reveal--delay-3">
+              <div class="proof-item__number">3</div>
+              <div class="proof-item__label">Sectors of deep expertise: resources, telecommunications, digital infrastructure</div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="pillar-card">
-          <div class="icon">I</div>
-          <h3>Investor</h3>
-          <p>
-            Major shareholder and board-level participant in technology companies
-            serving the natural resources, healthcare, and critical infrastructure
-            sectors. Deep domain knowledge informs every investment decision.
-          </p>
-          <div class="pillar-tags">
-            <span>Private Equity</span>
-            <span>Infrastructure</span>
-            <span>Industrial Tech</span>
+      <!-- =========================================
+           CURRENT ROLES STRIP
+           ========================================= -->
+      <section class="section section--alt">
+        <div class="container container--narrow">
+          <p class="section__label reveal">Current positions</p>
+          <div class="role-strip reveal reveal--delay-1" role="list">
+            <!-- EDIT CURRENT ROLES BELOW -->
+            <span class="role-chip" role="listitem">
+              <span class="role-chip__dot" aria-hidden="true"></span>
+              Director — BAI Communications
+            </span>
+            <span class="role-chip" role="listitem">
+              <span class="role-chip__dot" aria-hidden="true"></span>
+              Non-Executive Director — Vitalis Solutions
+            </span>
+            <span class="role-chip" role="listitem">
+              <span class="role-chip__dot" aria-hidden="true"></span>
+              Private Investor — Infrastructure &amp; Digital Assets
+            </span>
+            <span class="role-chip" role="listitem">
+              <span class="role-chip__dot" aria-hidden="true"></span>
+              AICD Member Director
+            </span>
           </div>
         </div>
+      </section>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats (light industrial feel) -->
-  <section class="section" style="padding-top:0;">
-    <div class="container">
-      <div class="stat-row">
-        <div class="stat-item">
-          <div class="num">20+</div>
-          <div class="label">Years Industry Experience</div>
+      <!-- =========================================
+           POSITIONING SUMMARY
+           ========================================= -->
+      <section class="section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="section__label reveal">Operator &amp; investor in equal measure</p>
+              <!-- EDIT POSITIONING PARAGRAPHS BELOW -->
+              <p class="reveal reveal--delay-1" style="font-family: var(--font-display); font-size: var(--text-xl); font-weight: 400; font-style: italic; line-height: 1.3; color: var(--color-text); max-width: 28ch;">
+                Two decades running businesses. A long view on capital.
+              </p>
+              <p class="reveal reveal--delay-2" style="font-size: var(--text-base); color: var(--color-text-muted); line-height: 1.8; max-width: 58ch;">
+                My operating career spans ICT services, private and public networks, and large-scale technology delivery for the resources sector. I have built and led businesses, managed P&amp;L at national and global scale, and driven commercial outcomes across some of Australia's most capital-intensive industries.
+              </p>
+              <p class="reveal reveal--delay-3" style="font-size: var(--text-base); color: var(--color-text-muted); line-height: 1.8; max-width: 58ch;">
+                In parallel, I invest with a long-duration lens — focused on infrastructure, digital assets, and energy transition. I bring the same rigour I apply to operating decisions to capital allocation: patient, thesis-driven, and attentive to downside.
+              </p>
+              <div class="reveal reveal--delay-4">
+                <a href="track-record.html" class="cta-link">
+                  View Track Record
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="reveal reveal--delay-2" style="position: relative; aspect-ratio: 3/4; border-radius: var(--radius-lg); overflow: hidden;">
+              <img
+                src="./assets/images/hero-infrastructure.png"
+                alt="Telecommunications tower and mining infrastructure in Western Australia at dusk"
+                style="width: 100%; height: 100%; object-fit: cover;"
+                loading="lazy"
+              >
+            </div>
+          </div>
         </div>
-        <div class="stat-item">
-          <div class="num">15+</div>
-          <div class="label">Years in Natural Resources</div>
+      </section>
+
+      <!-- =========================================
+           BOARD INTENT STATEMENT
+           Edit: the quote text below
+           ========================================= -->
+      <section class="section section--alt">
+        <div class="container container--narrow">
+          <p class="section__label reveal">Board &amp; advisory focus</p>
+          <div class="board-intent reveal reveal--delay-1">
+            <!-- EDIT BOARD INTENT STATEMENT BELOW -->
+            <p>
+              "I am interested in non-executive board and advisory roles where operating experience in resources and networks, strategic capital allocation and digital transformation can help boards navigate growth, technology and risk in complex, capital-intensive environments."
+            </p>
+          </div>
+          <div class="reveal reveal--delay-2" style="margin-top: var(--space-8);">
+            <a href="board.html" class="cta-link">
+              Board profile &amp; governance credentials
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
-        <div class="stat-item">
-          <div class="num">80+</div>
-          <div class="label">Healthcare Facilities Connected</div>
+      </section>
+
+      <!-- =========================================
+           SECTORS
+           Edit: sector names and descriptions below
+           ========================================= -->
+      <section class="section">
+        <div class="container">
+          <p class="section__label reveal">Sector experience</p>
+          <h2 class="section__title reveal reveal--delay-1">Deep experience across Australia's most capital-intensive industries</h2>
+          <div class="skills-grid" style="margin-top: var(--space-10);">
+            <!-- EDIT SECTORS BELOW — add/remove .skill-card blocks -->
+            <div class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+              </div>
+              <h3 class="skill-card__title">Telecommunications</h3>
+              <p class="skill-card__desc">Private and public networks, spectrum, critical communications, national infrastructure, tower assets and managed services delivery.</p>
+            </div>
+            <div class="skill-card reveal reveal--delay-1">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3 class="skill-card__title">Mining &amp; Resources</h3>
+              <p class="skill-card__desc">ICT and communications services for major mining operations in WA and globally. Iron ore, gold, lithium, and diversified resources clients.</p>
+            </div>
+            <div class="skill-card reveal reveal--delay-2">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h3 class="skill-card__title">Oil &amp; Gas</h3>
+              <p class="skill-card__desc">Technology and network delivery for upstream and downstream energy clients, including remote site connectivity and operational technology integration.</p>
+            </div>
+            <div class="skill-card reveal reveal--delay-3">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <h3 class="skill-card__title">Digital Infrastructure</h3>
+              <p class="skill-card__desc">Data centres, AI-enabled platforms, edge compute, and private networks. Investment focus on long-duration digital real assets in Australia.</p>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2v20M2 12h20"/><path d="M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/></svg>
+              </div>
+              <h3 class="skill-card__title">Energy Transition</h3>
+              <p class="skill-card__desc">Grid-linked renewables, battery storage, and energy infrastructure investment. Exposure to the physical and digital backbone of Australia's energy future.</p>
+            </div>
+            <div class="skill-card reveal reveal--delay-1">
+              <div class="skill-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+              </div>
+              <h3 class="skill-card__title">ICT Services</h3>
+              <p class="skill-card__desc">Managed services, enterprise technology transformation, and large-scale outsourcing. Client-facing leadership across Australia and international markets.</p>
+            </div>
+          </div>
         </div>
-        <div class="stat-item">
-          <div class="num">100+</div>
-          <div class="label">System Adapters Integrated</div>
+      </section>
+
+      <!-- =========================================
+           LATEST THINKING
+           ========================================= -->
+      <section class="section section--alt">
+        <div class="container">
+          <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: var(--space-6); margin-bottom: var(--space-10);">
+            <div>
+              <p class="section__label reveal">Thinking</p>
+              <h2 class="section__title reveal reveal--delay-1" style="margin-bottom: 0;">Perspectives on infrastructure, networks and capital.</h2>
+            </div>
+            <a href="thinking.html" class="cta-link reveal" style="flex-shrink: 0; margin-bottom: 4px;">
+              All articles
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="articles-grid">
+            <article class="article-card reveal">
+              <div class="article-card__image">
+                <img src="./assets/images/thinking-datacentre.png" alt="Data centre server rows" loading="lazy">
+              </div>
+              <div class="article-card__body">
+                <span class="article-card__category">Digital Infrastructure</span>
+                <h3 class="article-card__title">AI Data Centres in Australia: The Infrastructure Imperative</h3>
+                <p class="article-card__excerpt">Why Australia's data centre shortfall matters beyond hyperscalers — and what it means for boards overseeing technology-dependent businesses.</p>
+              </div>
+              <div class="article-card__footer">
+                <span class="article-card__date">Coming 2025</span>
+                <span class="upcoming-badge">In progress</span>
+              </div>
+            </article>
+
+            <article class="article-card reveal reveal--delay-1">
+              <div class="article-card__image">
+                <img src="./assets/images/thinking-privatenetworks.png" alt="Industrial wireless network equipment at a mining port" loading="lazy">
+              </div>
+              <div class="article-card__body">
+                <span class="article-card__category">Private Networks</span>
+                <h3 class="article-card__title">Private Networks and Industrial Infrastructure: A Capital Allocation Lens</h3>
+                <p class="article-card__excerpt">The convergence of OT, IT and connectivity is reshaping how resources businesses manage risk and create long-term value.</p>
+              </div>
+              <div class="article-card__footer">
+                <span class="article-card__date">Coming 2025</span>
+                <span class="upcoming-badge">In progress</span>
+              </div>
+            </article>
+
+            <article class="article-card reveal reveal--delay-2">
+              <div class="article-card__image">
+                <img src="./assets/images/thinking-energytransition.png" alt="Solar farm and transmission infrastructure at dawn" loading="lazy">
+              </div>
+              <div class="article-card__body">
+                <span class="article-card__category">Energy Transition</span>
+                <h3 class="article-card__title">Grid Investment and the Long-Duration Capital Opportunity</h3>
+                <p class="article-card__excerpt">How boards and investors should think about the energy transition not as a compliance exercise, but as a generational infrastructure investment cycle.</p>
+              </div>
+              <div class="article-card__footer">
+                <span class="article-card__date">Coming 2025</span>
+                <span class="upcoming-badge">In progress</span>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Quick Career Snapshot -->
-  <section class="section" style="padding-top:0;">
-    <div class="container">
-      <h2>Career</h2>
-      <div class="industrial-line"></div>
+    </main>
 
-      <div class="timeline-item">
-        <div class="timeline-year">2026 &mdash; Present</div>
-        <div class="timeline-content">
-          <h3>Director, Public &amp; Private Networks</h3>
-          <div class="org">BAI Communications</div>
-          <p>Leading private 5G, LTE, and mission-critical network delivery for mining, energy, rail, and government clients across Australia.</p>
-        </div>
-      </div>
+    <!-- Footer (injected by components.js) -->
+    <div id="site-footer"></div>
+  </div>
 
-      <div class="timeline-item">
-        <div class="timeline-year">2025 &mdash; 2026</div>
-        <div class="timeline-content">
-          <h3>Managing Director</h3>
-          <div class="org">Titan ICT (acquired by BAI Communications)</div>
-          <p>Led Titan ICT through its acquisition by BAI Communications. Oversaw engineering, advisory, and systems integration for blue-chip mining and energy clients.</p>
-        </div>
-      </div>
+  <script src="./components.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
 
-      <div class="timeline-item">
-        <div class="timeline-year">2023 &mdash; Present</div>
-        <div class="timeline-content">
-          <h3>Non-Executive Director &amp; Co-Founder</h3>
-          <div class="org">Vitalis Solutions</div>
-          <p>Board-level governance and strategic direction for Queensland-based healthcare and education ICT integrator.</p>
-        </div>
-      </div>
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
 
-      <div class="timeline-item">
-        <div class="timeline-year">2019 &mdash; 2022</div>
-        <div class="timeline-content">
-          <h3>Global Client Partner — Rio Tinto</h3>
-          <div class="org">DXC Technology</div>
-          <p>Led the global account for one of the world's largest mining companies, driving digital transformation across IT and operational technology.</p>
-        </div>
-      </div>
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
 
-      <p style="margin-top: var(--space-md);">
-        <a href="/about.html">Full career history &rarr;</a>
-      </p>
-    </div>
-  </section>
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Chris Upstone &nbsp;·&nbsp; <a href="mailto:hermes@chrisupstone.me">hermes@chrisupstone.me</a></p>
-    </div>
-  </footer>
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
 
-</body>
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
 </html>
