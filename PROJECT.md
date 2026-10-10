@@ -18,7 +18,7 @@ Building a thought leadership content library for chrisupstone.me, structured ar
 |---|-------|------|--------|------|
 | 1 | AI Data Centres in Australia: The Sovereign Capability Imperative | Investor | ✅ Published | `articles/ai-data-centres-australia.html` |
 | 2 | Private Networks and Industrial Infrastructure: A Capital Allocation Lens | Operator | ✅ Published | `articles/private-networks-capital-allocation.html` |
-| 3 | Grid Investment and the Long-Duration Capital Opportunity | Director | ⚠️ Tagged but not yet reframed | `articles/grid-investment-long-duration-capital.html` |
+| 3 | Grid Investment and the Governance of Long-Duration Capital | Director | ✅ Published (reframed) | `articles/grid-investment-long-duration-capital.html` |
 
 ### What's Done
 
@@ -27,28 +27,23 @@ Building a thought leadership content library for chrisupstone.me, structured ar
 - [x] Homepage article cards tagged with lens labels
 - [x] Article 1 (Sovereign AI) — researched, written, tightened to ~1,500 words, reframed as Investor lens
 - [x] Article 2 (Private Networks) — researched, written, reframed as Operator lens, Pilbara iron ore case study (no company named)
-- [x] Article 3 (Grid Investment) — researched, written, tagged as Director lens
+- [x] Article 3 (Grid Investment) — researched, written, reframed as Director lens (boardroom governance perspective: risk oversight, fiduciary duty, regulatory exposure, scenario planning); retitled "Grid Investment and the Governance of Long-Duration Capital"
 - [x] Governance placeholder article removed from Thinking page
 - [x] Domain references fixed (chrisupstone.com → chrisupstone.me)
+- [x] Voice-consistency review across all three articles — Article 2 closing section added to match the two-paragraph closing pattern of Articles 1 and 3; stray empty paragraph removed
+- [x] Article schema structured data (JSON-LD) added to all three article pages
 
 ### What's Remaining
 
-#### Article 3 — Grid Investment (Director lens reframing)
-- [ ] Reframe content from current investor/board hybrid to boardroom governance perspective
-- [ ] Replace "What boards should be asking" with governance-focused questions (risk oversight, capital allocation approval, regulatory exposure, scenario planning)
-- [ ] Ensure the article addresses what a NED needs to understand about energy transition risk and opportunity — not what an investor or operator needs
-- [ ] Consider whether the superannuation gap section should be reframed as a governance risk (fiduciary duty to understand transition exposure) rather than an investment opportunity
-- [ ] Review tone: should be governance-credible, not promotional
-
 #### Future Articles (not yet started)
 - [ ] Article 4 — TBD (Director lens topic, to replace the deleted governance placeholder)
-- [ ] Potential topics: digital governance in capital-intensive businesses, technology risk as infrastructure risk, board oversight of AI adoption
+- [ ] **Recommended topic:** Board oversight of AI adoption in capital-intensive businesses — the governance counterpart to Article 1's investor lens on sovereign AI. A director needs to understand AI as infrastructure risk: dependency on hyperscaler compute, model access risk, the gap between "we use AI" and "we govern AI," and the board's role in ensuring technology adoption decisions are treated as strategic, not just operational. This would complete a natural pair with Article 1 (Investor: where the value sits → Director: how the board governs the risk) and reinforce Chris's NED positioning.
+- [ ] Alternative topics: digital governance in capital-intensive businesses, technology risk as infrastructure risk
 
 #### General
-- [ ] Review all three articles for consistency of voice and style once Article 3 is reframed
-- [ ] Consider whether the Thinking page needs a "Director" article before the lens feels complete (currently 1 Investor, 1 Operator, 1 Director-tagged-but-not-reframed)
-- [ ] SEO: add structured data (Article schema) to each article page
+- [ ] Consider whether the Thinking page needs a second Director article before the lens feels complete (currently 1 Investor, 1 Operator, 1 Director)
 - [ ] Consider adding author bio block to article pages
+- [ ] Git: commit and push the Article 3 reframe, schema additions, and voice-consistency edits
 
 ## Style Guidelines (established)
 
