@@ -46,7 +46,7 @@ const SITE = {
   initials: "CU",
   tagline: "Operator-Investor",
   email: "chris.upstone@iinet.net.au",
-  linkedin: "https://www.linkedin.com/in/chrisupstone",
+  linkedin: "https://www.linkedin.com/in/cupstone",
   location: "Perth, Western Australia",
   copyright: "Chris Upstone. All rights reserved."
 };
