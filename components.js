@@ -62,21 +62,22 @@ function themeToggleIcon(theme) {
 // -------------------------------------------------------
 function renderHeader() {
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const basePath = window.location.pathname.split('/').filter(Boolean).length > 1 ? '../' : '';
   const navHTML = navLinks.map(link => {
     const isActive = currentPage === link.href ? ' class="active"' : '';
-    return `<li><a href="${link.href}"${isActive}>${link.label}</a></li>`;
+    return `<li><a href="${basePath}${link.href}"${isActive}>${link.label}</a></li>`;
   }).join('');
 
   const mobileNavHTML = navLinks.map(link => {
     const isActive = currentPage === link.href ? ' class="active"' : '';
-    return `<a href="${link.href}"${isActive}>${link.label}</a>`;
+    return `<a href="${basePath}${link.href}"${isActive}>${link.label}</a>`;
   }).join('');
 
   return `
     <header class="site-header" role="banner">
       <div class="container">
         <nav class="nav-inner" aria-label="Primary navigation">
-          <a href="index.html" class="nav-logo" aria-label="${SITE.name} — Home">
+          <a href="${basePath}index.html" class="nav-logo" aria-label="${SITE.name} — Home">
             ${logoMark()}
             <span class="nav-logo__text">
               ${SITE.name}
@@ -107,6 +108,7 @@ function renderHeader() {
 // RENDER FOOTER
 // -------------------------------------------------------
 function renderFooter() {
+  const basePath = window.location.pathname.split('/').filter(Boolean).length > 1 ? '../' : '';
   return `
     <footer class="site-footer" role="contentinfo">
       <div class="container">
@@ -119,7 +121,7 @@ function renderFooter() {
             <div class="footer-col">
               <h4>Pages</h4>
               <ul role="list">
-                ${navLinks.map(l => `<li><a href="${l.href}">${l.label}</a></li>`).join('')}
+                ${navLinks.map(l => `<li><a href="${basePath}${l.href}">${l.label}</a></li>`).join('')}
               </ul>
             </div>
             <div class="footer-col">
