@@ -18,7 +18,7 @@ Building a thought leadership content library for chrisupstone.me, structured ar
 |---|-------|------|--------|------|
 | 1 | AI Data Centres in Australia: The Sovereign Capability Imperative | Investor | ✅ Published | `articles/ai-data-centres-australia.html` |
 | 2 | Private Networks and Industrial Infrastructure: A Capital Allocation Lens | Operator | ✅ Published | `articles/private-networks-capital-allocation.html` |
-| 3 | Grid Investment and the Governance of Long-Duration Capital | Director | ✅ Published (reframed) | `articles/grid-investment-long-duration-capital.html` |
+| 3 | AI, OT Cyber Security and the Boardroom Governance Imperative | Director | ✅ Published | `articles/ai-ot-cyber-security-governance.html` |
 
 ### What's Done
 
@@ -27,7 +27,7 @@ Building a thought leadership content library for chrisupstone.me, structured ar
 - [x] Homepage article cards tagged with lens labels
 - [x] Article 1 (Sovereign AI) — researched, written, tightened to ~1,500 words, reframed as Investor lens
 - [x] Article 2 (Private Networks) — researched, written, reframed as Operator lens, Pilbara iron ore case study (no company named)
-- [x] Article 3 (Grid Investment) — researched, written, reframed as Director lens (boardroom governance perspective: risk oversight, fiduciary duty, regulatory exposure, scenario planning); retitled "Grid Investment and the Governance of Long-Duration Capital"
+- [x] Article 3 (AI/OT Cyber Security) — researched and written, replacing Grid Investment article. Director lens (boardroom governance): AI as threat accelerant in OT environments, IT/OT convergence eliminating air gaps, physical consequences of cyber incidents, governance gap with audit committee overload, case for dedicated AI/Cyber Security sub-committee with charter for strategic risk oversight, AI governance, and third-party/supply chain risk. Grounded in NACD 2026 Handbook, WEF Global Cybersecurity Outlook 2026, MM-ISAC data, Fortinet OT report, EY Fortune 100 disclosure analysis.
 - [x] Governance placeholder article removed from Thinking page
 - [x] Domain references fixed (chrisupstone.com → chrisupstone.me)
 - [x] Voice-consistency review across all three articles — Article 2 closing section added to match the two-paragraph closing pattern of Articles 1 and 3; stray empty paragraph removed
@@ -36,9 +36,8 @@ Building a thought leadership content library for chrisupstone.me, structured ar
 ### What's Remaining
 
 #### Future Articles (not yet started)
-- [ ] Article 4 — TBD (Director lens topic, to replace the deleted governance placeholder)
-- [ ] **Recommended topic:** Board oversight of AI adoption in capital-intensive businesses — the governance counterpart to Article 1's investor lens on sovereign AI. A director needs to understand AI as infrastructure risk: dependency on hyperscaler compute, model access risk, the gap between "we use AI" and "we govern AI," and the board's role in ensuring technology adoption decisions are treated as strategic, not just operational. This would complete a natural pair with Article 1 (Investor: where the value sits → Director: how the board governs the risk) and reinforce Chris's NED positioning.
-- [ ] Alternative topics: digital governance in capital-intensive businesses, technology risk as infrastructure risk
+- [ ] Article 4 — TBD (could expand on a Director lens topic or add a new lens area)
+- [ ] Potential topics: digital governance in capital-intensive businesses, the grid investment / energy transition governance article (previously Article 3, now available to reprise if a fourth article is needed), technology risk as infrastructure risk
 
 #### General
 - [ ] Consider whether the Thinking page needs a second Director article before the lens feels complete (currently 1 Investor, 1 Operator, 1 Director)
