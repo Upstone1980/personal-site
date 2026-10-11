@@ -147,7 +147,8 @@ function renderFooter() {
 // -------------------------------------------------------
 function initTheme() {
   const root = document.documentElement;
-  let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const stored = localStorage.getItem('theme');
+  let theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   root.setAttribute('data-theme', theme);
 
   document.addEventListener('click', function(e) {
@@ -155,12 +156,13 @@ function initTheme() {
     if (!btn) return;
     theme = theme === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
     btn.innerHTML = themeToggleIcon(theme);
     btn.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
   });
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!root.hasAttribute('data-theme')) {
+    if (!localStorage.getItem('theme')) {
       theme = e.matches ? 'dark' : 'light';
       root.setAttribute('data-theme', theme);
     }
